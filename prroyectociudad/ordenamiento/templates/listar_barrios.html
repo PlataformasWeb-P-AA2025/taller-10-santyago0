@@ -1,0 +1,21 @@
+<h2>Barrios</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Viviendas</th>
+      <th>Parques</th>
+      <th>Edificios Residenciales</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for b in barrios %}
+    <tr>
+      <td>{{b.nombre}}</td>
+      <td>{{b.numero_viviendas}}</td>
+      <td>{{b.numero_parques}}</td>
+      <td>{{b.numero_edificios_residenciales}}</td>
+    {% endfor %}
+  </tbody>
+</table>

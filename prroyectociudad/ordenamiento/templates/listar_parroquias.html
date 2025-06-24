@@ -1,0 +1,25 @@
+<h2>Parroquias</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Ubicación</th>
+      <th>Tipo</th>
+      <th>Barrios</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for p in parroquias %}
+    <tr>
+      <td>{{p.nombre}}</td>
+      <td>{{p.ubicacion}}</td>
+      <td>{{p.tipo}}</td>
+      {% for b in barrios %}
+      <td>
+        {{b.nombre}}<br>
+      </td>
+      {% endfor %}
+    {% endfor %}
+  </tbody>
+</table>
